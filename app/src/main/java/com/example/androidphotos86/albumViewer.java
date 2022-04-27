@@ -4,9 +4,19 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.LinkedList;
+
 public class albumViewer extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.photo_search);
+        setContentView(R.layout.album_list);
+
+        /*
+        LinkedList<String> list = new LinkedList<String>();
+        list.add("dog");
+        list.add("cat");
+
+        Serialize<LinkedList<String>> serialize = new Serialize<LinkedList<String>>();
+        */
     }
 }
