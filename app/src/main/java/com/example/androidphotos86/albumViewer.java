@@ -7,6 +7,6 @@ import androidx.appcompat.app.AppCompatActivity;
 public class albumViewer extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.photo_list);
+        setContentView(R.layout.photo_view);
     }
 }

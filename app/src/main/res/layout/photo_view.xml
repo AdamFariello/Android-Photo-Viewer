@@ -7,10 +7,19 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="379dp"
-        android:layout_height="585dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp"
+        android:layout_width="366dp"
+        android:layout_height="365dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
+        android:background="#58EA48"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
     <Button
@@ -19,7 +28,7 @@
         android:layout_height="57dp"
         android:layout_marginStart="39dp"
         android:layout_marginEnd="42dp"
-        android:layout_marginBottom="44dp"
+        android:layout_marginBottom="60dp"
         android:text="Edit Photo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button2"
@@ -30,27 +39,35 @@
         android:id="@+id/button2"
         android:layout_width="98dp"
         android:layout_height="57dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="44dp"
-        android:text=">"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="60dp"
+        android:text="Next Photo"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button3" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="101dp"
         android:layout_height="58dp"
         android:layout_marginStart="16dp"
-        android:layout_marginBottom="44dp"
-        android:text="<"
+        android:layout_marginBottom="60dp"
+        android:text="Prev Photo"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="379dp"
-        android:layout_height="38dp"
+        android:layout_width="380dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="4dp"
         android:text="Exit"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="685dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
 </androidx.constraintlayout.widget.ConstraintLayout>
