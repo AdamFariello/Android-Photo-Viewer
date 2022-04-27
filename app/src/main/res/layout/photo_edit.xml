@@ -7,8 +7,8 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="350dp"
-        android:layout_height="380dp"
+        android:layout_width="351dp"
+        android:layout_height="377dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
@@ -56,49 +56,41 @@
     </ScrollView>
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="99dp"
-        android:layout_height="57dp"
-        android:layout_marginStart="39dp"
-        android:layout_marginEnd="42dp"
-        android:layout_marginBottom="60dp"
-        android:text="Rename Album"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
-        app:layout_constraintHorizontal_bias="0.481"
-        app:layout_constraintStart_toEndOf="@+id/button" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="98dp"
-        android:layout_height="57dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="60dp"
-        android:text="Remove Album"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="101dp"
+        android:id="@+id/button5"
+        android:layout_width="127dp"
         android:layout_height="58dp"
         android:layout_marginStart="16dp"
-        android:layout_marginBottom="60dp"
-        android:text="Add Album"
+        android:text="Add Location"
+        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="127dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="1dp"
+        android:text="Add Person"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button4"
-        android:layout_width="379dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="7dp"
-        android:text="Search Photo"
+        android:id="@+id/button8"
+        android:layout_width="127dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="21dp"
+        android:text="Delete Tag"
+        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="127dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="1dp"
+        android:text="Exit"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintEnd_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
