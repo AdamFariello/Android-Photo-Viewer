@@ -1,10 +1,8 @@
 package com.example.androidphotos86;
 
 import android.app.Activity;
-import android.app.Application;
 import android.content.Context;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
