@@ -3,7 +3,7 @@ package com.example.androidphotos86;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import java.util.LinkedList;
-import
+import java.util.stream.Stream;
 
 public class albumViewer extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {

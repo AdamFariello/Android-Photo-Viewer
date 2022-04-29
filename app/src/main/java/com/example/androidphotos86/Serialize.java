@@ -1,4 +1,4 @@
-package tools;
+package com.example.androidphotos86;
 
 import android.app.Activity;
 import android.content.Context;
