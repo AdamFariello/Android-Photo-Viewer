@@ -1,21 +1,22 @@
 package com.example.androidphotos86;
 
+import android.app.Activity;
+import android.app.Application;
 import android.content.Context;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
-public class Serialize <T> implements Serializable {
+public class Serialize <T> extends Activity implements Serializable {
 	private static final long serialVersionUID = 3438982363426716349L;
-	//private final File file = new File(".serialize");
 	private final String fileName = ".serialize";
 	private Context context;
 
-	public Serialize(Context context) {
-		//This is required because you can't get the
-		//context from the class calling this class
+	public Serialize (Context context){
+		//Maybe one day we won't need this;
 		this.context = context;
 	}
 
@@ -23,6 +24,7 @@ public class Serialize <T> implements Serializable {
 		while (lock.isLocked());
 		lock.lock();
 		try {
+			//context = getApplicationContext();
 			FileOutputStream fos = context.openFileOutput(
 					fileName, Context.MODE_PRIVATE
 			);
@@ -36,17 +38,18 @@ public class Serialize <T> implements Serializable {
 	}
 
 	public T deserialize() {
+		//TODO figure out if catch should actually catch errors
 		while(lock.isLocked());
 		lock.lock();
 		T t = null;
 		try {
-			ObjectInputStream ois = new ObjectInputStream(
-				new FileInputStream(fileName)
-			);
+			FileInputStream fis = context.openFileInput(fileName);
+			ObjectInputStream ois = new ObjectInputStream(fis);
 			t = (T) ois.readObject();
 		} catch (Exception e) {
-			//Catc hes empty list or bad serializations
+			//Catches bad serialization
 		}
+
 		lock.unlock();
 		return t;
 	}
