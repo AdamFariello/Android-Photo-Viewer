@@ -7,9 +7,7 @@ import java.util.LinkedList;
 public class albumViewer extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.album_list);
-
-
+        setContentView(R.layout.album_list);
 
     }
 }
