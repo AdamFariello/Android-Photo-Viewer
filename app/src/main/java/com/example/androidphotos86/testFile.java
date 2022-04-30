@@ -4,10 +4,9 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import java.util.LinkedList;
 
-public class albumViewer extends AppCompatActivity {
+public class testFile extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.album_list);
-
+        setContentView(R.layout.photo_view);
     }
 }

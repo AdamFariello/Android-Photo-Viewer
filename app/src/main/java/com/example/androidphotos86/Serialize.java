@@ -14,7 +14,8 @@ public class Serialize <T> extends Activity implements Serializable {
 	private Context context;
 
 	public Serialize (Context context){
-		//Maybe one day we won't need this;
+		//When declaring this code, use
+		//the method: getApplicationContext()
 		this.context = context;
 	}
 
@@ -46,6 +47,7 @@ public class Serialize <T> extends Activity implements Serializable {
 			t = (T) ois.readObject();
 		} catch (Exception e) {
 			//Catches bad serialization
+			System.out.println();
 		}
 
 		lock.unlock();

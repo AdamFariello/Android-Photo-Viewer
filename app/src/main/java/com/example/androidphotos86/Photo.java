@@ -1,9 +1,6 @@
 package com.example.androidphotos86;
 
-import static android.app.Activity.RESULT_OK;
-
 import android.content.Intent;
-import android.media.Image;
 import android.net.Uri;
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -11,19 +8,22 @@ import java.util.ArrayList;
 public class Photo implements Serializable {
 	private Uri imageURI;
 	private ArrayList<Tag> photoTags;
-	private static final int PICK_IMAGE = 100;
 
-	public Photo(int requestCode, int resultCode, Intent data) {
-		//TODO ?
-		//super.onActivityResult(requestCode, resultCode, data);
-
+	public Photo(Intent data) {
+		//TODO Figure out what the codes are for
+		//
+		/*
+		super.onActivityResult(requestCode, resultCode, data);
 		if (resultCode == RESULT_OK && requestCode == PICK_IMAGE){
-			imageURI = data.getData();
-			photoTags = new ArrayList<Tag>();
+
 		} else {
 			System.out.println("[DEBUG] Photo.Photo");
 			System.out.println("parameters wrong");
 		}
+		*/
+
+		imageURI = data.getData();
+		photoTags = new ArrayList<Tag>();
 	}
 
 	public Uri getUri () {
