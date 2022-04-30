@@ -17,7 +17,6 @@ public class photo_view_controller extends AppCompatActivity {
         setContentView(R.layout.photo_view);
         imageView = findViewById(R.id.imageView);
     }
-
     private void updateImageView(Photo photo) {
         imageView.setImageURI(photo.getUri());
     }

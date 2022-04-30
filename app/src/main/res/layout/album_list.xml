@@ -5,100 +5,111 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ScrollView
-        android:id="@+id/scrollView2"
-        android:layout_width="350dp"
-        android:layout_height="380dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:text="Search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/renameButton" />
+
+    <Button
+        android:id="@+id/renameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="22dp"
+        android:text="Rename"
+        app:layout_constraintBottom_toTopOf="@+id/searchButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/renamealbum_name" />
+
+    <Button
+        android:id="@+id/removeButton"
+        android:layout_width="119dp"
+        android:layout_height="50dp"
+        android:text="Remove"
+        app:layout_constraintBottom_toTopOf="@+id/renameButton"
+        app:layout_constraintEnd_toStartOf="@+id/removealbum_name"
+        app:layout_constraintHorizontal_bias="0.279"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <EditText
+        android:id="@+id/renamealbum_name"
+        android:layout_width="166dp"
+        android:layout_height="48dp"
+        android:background="@android:drawable/editbox_background"
+        android:hint="Old Album Name"
+        app:layout_constraintBottom_toTopOf="@+id/renameButton"
+        app:layout_constraintEnd_toStartOf="@+id/newalbum_name"
+        app:layout_constraintHorizontal_bias="0.294"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/removeButton" />
+
+    <EditText
+        android:id="@+id/removealbum_name"
+        android:layout_width="214dp"
+        android:layout_height="48dp"
+        android:background="@android:drawable/editbox_background"
+        android:hint="Album Name"
+        app:layout_constraintBottom_toTopOf="@+id/renameButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintStart_toEndOf="@+id/renamealbum_name"
+        app:layout_constraintTop_toBottomOf="@+id/album_list"
+        app:layout_constraintVertical_bias="0.477" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+    <EditText
+        android:id="@+id/newalbum_name"
+        android:layout_width="166dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="28dp"
+        android:background="@android:drawable/editbox_background"
+        android:hint="New Album Name"
+        app:layout_constraintBottom_toTopOf="@+id/renameButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/removealbum_name" />
 
-            <TextView
-                android:id="@+id/textView5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
-
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
-
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="pen island" />
-
-        </LinearLayout>
-    </ScrollView>
-
-    <Button
-        android:id="@+id/bt_edit"
-        android:layout_width="99dp"
-        android:layout_height="57dp"
-        android:layout_marginStart="39dp"
-        android:layout_marginEnd="42dp"
-        android:layout_marginBottom="60dp"
-        android:text="Rename Album"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/bt_next"
-        app:layout_constraintHorizontal_bias="0.481"
-        app:layout_constraintStart_toEndOf="@+id/bt_prev" />
-
-    <Button
-        android:id="@+id/bt_next"
-        android:layout_width="98dp"
-        android:layout_height="57dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="60dp"
-        android:text="Remove Album"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
-        android:id="@+id/bt_prev"
-        android:layout_width="101dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="60dp"
-        android:text="Add Album"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/bt_exit"
-        android:layout_width="379dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="7dp"
-        android:text="Search Photo"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ListView
+        android:id="@+id/album_list"
+        android:layout_width="411dp"
+        android:layout_height="421dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bt_edit" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/addalbum_name"
+        android:layout_width="214dp"
+        android:layout_height="48dp"
+        android:background="@android:drawable/editbox_background"
+        android:hint="Album Name"
+        app:layout_constraintBottom_toTopOf="@+id/removealbum_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.733"
+        app:layout_constraintStart_toEndOf="@+id/removeButton"
+        app:layout_constraintTop_toBottomOf="@+id/album_list"
+        app:layout_constraintVertical_bias="0.628" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="109dp"
+        android:layout_height="50dp"
+        android:text="Add "
+        app:layout_constraintBottom_toTopOf="@+id/removealbum_name"
+        app:layout_constraintEnd_toStartOf="@+id/addalbum_name"
+        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/album_list"
+        app:layout_constraintVertical_bias="0.48" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
