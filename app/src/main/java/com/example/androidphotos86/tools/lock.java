@@ -1,4 +1,4 @@
-package com.example.androidphotos86.tools;
+package com.example.androidfotos86.tools;
 /**
  * 
  * @author Edison & Adam
@@ -6,7 +6,7 @@ package com.example.androidphotos86.tools;
  */
 public class lock {
 	private static boolean lock;
-	/** methods to lock / unlock photos */
+	/** methods to lock / unlock fotos */
 	public static void init() {
 		//false := it is not locked
 		//true 	:= it is locked

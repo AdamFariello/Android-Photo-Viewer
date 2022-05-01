@@ -1,4 +1,4 @@
-package com.example.androidphotos86.photoTools;
+package com.example.androidphotos86.fotoTools;
 
 import android.content.Context;
 import android.view.View;
@@ -9,14 +9,14 @@ import java.util.ArrayList;
 
 public class ImageAdapter extends BaseAdapter {
     private Context mContext;
-    private ArrayList<Photo> photos;
+    private ArrayList<Foto> fotos;
 
-    public ImageAdapter(Context c, ArrayList<Photo> photos) {
+    public ImageAdapter(Context c, ArrayList<Foto> fotos) {
         mContext = c;
-        this.photos=photos;
+        this.fotos = fotos;
     }
     public int getCount() {
-        return photos.size();
+        return fotos.size();
     }
     public Object getItem(int position) {
         return null;
@@ -37,7 +37,7 @@ public class ImageAdapter extends BaseAdapter {
         } else {
             imageView = (ImageView) convertView;
         }
-         Uri uri = photos.get(position).getUri();
+         Uri uri = fotos.get(position).getUri();
         imageView.setImageURI(uri);
         return imageView;
          */

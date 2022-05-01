@@ -6,35 +6,35 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/removePhotoButton"
+        android:id="@+id/removefotoButton"
         android:layout_width="98dp"
         android:layout_height="57dp"
         android:layout_marginEnd="156dp"
         android:layout_marginBottom="16dp"
-        android:onClick="removePhoto"
-        android:text="Remove Photo"
+        android:onClick="removefoto"
+        android:text="Remove foto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:id="@+id/addPhotoButton"
+        android:id="@+id/addfotoButton"
         android:layout_width="101dp"
         android:layout_height="58dp"
         android:layout_marginStart="152dp"
         android:layout_marginBottom="108dp"
-        android:onClick="addPhoto"
-        android:text="Add Photo"
+        android:onClick="addfoto"
+        android:text="Add foto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <GridView
-        android:id="@+id/photoGrid"
+        android:id="@+id/fotoGrid"
         android:layout_width="412dp"
         android:layout_height="532dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="1dp"
         android:layout_marginBottom="32dp"
-        app:layout_constraintBottom_toTopOf="@+id/addPhotoButton"
+        app:layout_constraintBottom_toTopOf="@+id/addfotoButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

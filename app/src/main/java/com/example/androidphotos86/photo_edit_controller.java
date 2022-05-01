@@ -1,4 +1,4 @@
-package com.example.androidphotos86;
+package com.example.androidfotos86;
 
-public class photo_edit_controller {
+public class foto_edit_controller {
 }

@@ -1,15 +1,10 @@
-package com.example.androidphotos86.photoTools;
+package com.example.androidphotos86.fotoTools;
 
 import java.io.Serializable;
 
 public class Tag implements Serializable {
 	private static final long serialVersionUID = 1L;
 	public String type, value;
-
-	public Tag() {
-		//TODO figure out why this is here
-		return;
-	}
 
 	public Tag(String type, String value) {
 		this.type=type;
