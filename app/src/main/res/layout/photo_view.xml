@@ -14,7 +14,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="12dp"
         android:background="#58EA48"
-        app:layout_constraintBottom_toTopOf="@+id/addfotoButton"
+        app:layout_constraintBottom_toTopOf="@+id/addPhotoButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,30 +29,30 @@
         android:layout_marginStart="39dp"
         android:layout_marginEnd="42dp"
         android:layout_marginBottom="60dp"
-        android:text="Edit foto"
+        android:text="Edit Photo"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/removefotoButton"
+        app:layout_constraintEnd_toStartOf="@+id/removePhotoButton"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/addfotoButton" />
+        app:layout_constraintStart_toEndOf="@+id/addPhotoButton" />
 
     <Button
-        android:id="@+id/removefotoButton"
+        android:id="@+id/removePhotoButton"
         android:layout_width="98dp"
         android:layout_height="57dp"
         android:layout_marginEnd="12dp"
         android:layout_marginBottom="60dp"
-        android:text="Next foto"
+        android:text="Next Photo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/editButton" />
 
     <Button
-        android:id="@+id/addfotoButton"
+        android:id="@+id/addPhotoButton"
         android:layout_width="101dp"
         android:layout_height="58dp"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="60dp"
-        android:text="Prev foto"
+        android:text="Prev Photo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/editButton"
         app:layout_constraintStart_toStartOf="parent" />

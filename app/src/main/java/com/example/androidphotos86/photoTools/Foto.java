@@ -1,4 +1,4 @@
-package com.example.androidphotos86.fotoTools;
+package com.example.androidphotos86.photoTools;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -7,20 +7,20 @@ import java.util.ArrayList;
 
 public class Foto implements Serializable {
 	private Uri imageURI;
-	private ArrayList<Tag> fotoTags;
+	private ArrayList<Tag> photoTags;
 
 	public Foto(Intent data) {
 		imageURI = data.getData();
-		fotoTags = new ArrayList<Tag>();
+		photoTags = new ArrayList<Tag>();
 	}
 
 	public Uri getUri () {
 		return imageURI;
 	}
 	public ArrayList<Tag> getTags () {
-		return fotoTags;
+		return photoTags;
 	}
 	public String toString() {
-		return "ImageUri: " + imageURI + "\ntags: " +fotoTags;
+		return "ImageUri: " + imageURI + "\ntags: " +photoTags;
 	}
 }

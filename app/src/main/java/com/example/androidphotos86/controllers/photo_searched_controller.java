@@ -1,4 +1,4 @@
-package com.example.androidfotos86.controllers;
+package com.example.androidphotos86.controllers;
 
-public class foto_searched_controller {
+public class photo_searched_controller {
 }
