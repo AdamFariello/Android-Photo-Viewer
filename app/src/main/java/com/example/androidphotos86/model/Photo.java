@@ -24,6 +24,10 @@ public class Photo implements Serializable {
 			System.out.println("parameters wrong");
 		}
 	}
+	public Photo(Uri uri){
+		this.imageURI=uri;
+		photoTags= new ArrayList<Tag>();
+	}
 
 	public Uri getUri () {
 		return imageURI;

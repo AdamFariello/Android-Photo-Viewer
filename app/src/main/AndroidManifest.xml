@@ -9,6 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidPhotos86">
+        <activity
+            android:name=".controllers.photo_searched_controller"
+            android:exported="false"
+            android:parentActivityName="com.example.androidphotos86.controllers.album_list_controller" />
+        <activity
+            android:name=".controllers.photo_list_controller"
+            android:exported="true"
+             />
 
         <activity
             android:name=".controllers.album_list_controller"
