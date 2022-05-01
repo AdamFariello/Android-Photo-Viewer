@@ -1,25 +1,16 @@
-package com.example.androidphotos86;
+package com.example.androidphotos86.controllers;
 
-import androidx.activity.result.ActivityResult;
-import androidx.activity.result.ActivityResultCallback;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
-
-import android.app.Activity;
-import android.widget.Button;
 import android.widget.ImageView;
-import androidx.activity.result.ActivityResultLauncher;
-import androidx.activity.result.contract.ActivityResultContracts;
-
 import com.google.android.gms.cast.framework.media.ImagePicker;
-
 import java.io.FileNotFoundException;
-import java.time.Instant;
+import com.example.androidphotos86.R;
+import com.example.androidphotos86.model.Photo;
 
 public class photo_view_controller extends AppCompatActivity {
     private static final int PICK_IMAGE = 100;

@@ -1,4 +1,4 @@
-package com.example.androidphotos86;
+package com.example.androidphotos86.controllers;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,7 +10,10 @@ import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.io.IOException;
+import com.example.androidphotos86.R;
+import com.example.androidphotos86.model.Album;
+import com.example.androidphotos86.model.Serialize;
+
 import java.util.ArrayList;
 
 public class album_list_controller extends AppCompatActivity {
@@ -21,11 +24,16 @@ public class album_list_controller extends AppCompatActivity {
     private ArrayList<Album> albumArrayList;
 
     protected void onCreate(Bundle savedInstanceState) {
+        albumArrayList= new ArrayList<Album>();
+        Serialize<ArrayList<Album>> serialize =
+                new Serialize<>(getApplicationContext());
+        albumArrayList = serialize.deserialize();
+        albumArrayList= new ArrayList<Album>();
+        if(albumArrayList==null){
+            albumArrayList.add(new Album("a"));
+        }
         super.onCreate(savedInstanceState);
         setContentView(R.layout.album_list);
-        Serialize<ArrayList<Album>> serialize =
-                new Serialize<ArrayList<Album>>(getApplicationContext());
-        albumArrayList = serialize.deserialize();
 
         addAlbumName = findViewById(R.id.addalbum_name);
         removeAlbumName = findViewById(R.id.removealbum_name);
@@ -52,9 +60,8 @@ public class album_list_controller extends AppCompatActivity {
         }
 
         for (i = 0; i < albumArrayList.size(); i++) {
-            if (oldAlbumName.compareToIgnoreCase(albumArrayList.get(i).albumName) == 0) {
+            if (oldAlbumName.compareToIgnoreCase(albumArrayList.get(i).albumName) == 0)
                 albumArrayList.get(i).albumName=newAlbumName1;
-            }
         }
         Serialize<ArrayList<Album>> serialize =
                 new Serialize<ArrayList<Album>>(getApplicationContext());
@@ -63,8 +70,7 @@ public class album_list_controller extends AppCompatActivity {
     }
 
     private void addAlbum(View view) {
-
-        if (addAlbumName.getText().toString() == "") {
+        if (addAlbumName.getText().toString().equals("")) {
             return;
         }
         Album newAlbum = new Album(addAlbumName.getText().toString());
@@ -112,6 +118,9 @@ public class album_list_controller extends AppCompatActivity {
 
     private void showAlbum(int pos){
         // launch for edit
+        Bundle bundle = new Bundle();
+        bundle.putInt(photo_list_controller.ALBUM_INDEX, pos);
+        bundle.putString(photo_list_controller.ALBUM_NAME, albumArrayList.get(pos).albumName);
         Intent intent = new Intent(this, photo_list_controller.class);
         startActivity(intent);
 
