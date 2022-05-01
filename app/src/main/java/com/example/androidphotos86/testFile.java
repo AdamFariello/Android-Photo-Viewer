@@ -28,18 +28,13 @@ public class testFile extends AppCompatActivity {
         s.serialize(test);
         Object o1 = s.deserialize();
 
-        ArrayList<String> star2;
         try {
-            ArrayList<String> star1 = (ArrayList<String>) o1;
-            if (star1.get(0) != null) {
-                star2 = star1;
-            } else {
-                throw new Error();
-            }
+            ArrayList<String> star = (ArrayList<String>) o1;
+            if (star.get(0) instanceof String)
+                System.out.println("Sucess");
         } catch (Exception e) {
-            star2 = new ArrayList<>();
+            System.out.println("fail");
         }
-        System.out.println("a");
     }
 
     /*
