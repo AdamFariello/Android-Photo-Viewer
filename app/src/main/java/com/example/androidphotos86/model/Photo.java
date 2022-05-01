@@ -1,9 +1,8 @@
-package com.example.androidphotos86;
+package com.example.androidphotos86.model;
 
 import static android.app.Activity.RESULT_OK;
 
 import android.content.Intent;
-import android.media.Image;
 import android.net.Uri;
 import java.io.Serializable;
 import java.util.ArrayList;

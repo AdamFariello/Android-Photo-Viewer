@@ -1,4 +1,4 @@
-package com.example.androidphotos86;
+package com.example.androidphotos86.model;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -21,6 +21,6 @@ public class Album implements Serializable {
 	}
 
 	public String toString() {
-		return this.albumName + "| " + this.albumPhotos.size();
+		return this.albumName;
 	}
 }
