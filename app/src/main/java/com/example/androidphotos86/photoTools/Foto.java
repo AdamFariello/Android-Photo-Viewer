@@ -1,15 +1,15 @@
-package com.example.androidphotos86.model;
+package com.example.androidphotos86.photoTools;
 
 import android.content.Intent;
 import android.net.Uri;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Photo implements Serializable {
+public class Foto implements Serializable {
 	private Uri imageURI;
 	private ArrayList<Tag> photoTags;
 
-	public Photo(Intent data) {
+	public Foto(Intent data) {
 		imageURI = data.getData();
 		photoTags = new ArrayList<Tag>();
 	}

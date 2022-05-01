@@ -1,4 +1,4 @@
-package com.example.androidphotos86.model;
+package com.example.androidphotos86.tools;
 
 import android.app.Activity;
 import android.content.Context;
@@ -47,7 +47,7 @@ public class Serialize <T> extends Activity implements Serializable {
 			t = (T) ois.readObject();
 		} catch (Exception e) {
 			//Catches bad serialization
-			System.out.println();
+			//System.out.println();
 		}
 
 		lock.unlock();

@@ -1,4 +1,4 @@
-package com.example.androidphotos86.model;
+package com.example.androidphotos86.tools;
 /**
  * 
  * @author Edison & Adam
