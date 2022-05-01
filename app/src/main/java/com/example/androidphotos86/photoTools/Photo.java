@@ -5,11 +5,11 @@ import android.net.Uri;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Foto implements Serializable {
+public class Photo {
 	private Uri imageURI;
 	private ArrayList<Tag> photoTags;
 
-	public Foto(Intent data) {
+	public Photo(Intent data) {
 		imageURI = data.getData();
 		photoTags = new ArrayList<Tag>();
 	}

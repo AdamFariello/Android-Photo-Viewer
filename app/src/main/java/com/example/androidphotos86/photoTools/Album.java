@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class Album implements Serializable {
 	private String albumName;
-	private ArrayList<Foto> albumPhotos;
+	private ArrayList<Photo> albumPhotos;
 
 	//Initialize
 	public Album() {

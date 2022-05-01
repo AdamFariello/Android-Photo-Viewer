@@ -25,7 +25,7 @@ public class Serialize <T> extends Activity implements Serializable {
 		try {
 			//context = getApplicationContext();
 			FileOutputStream fos = context.openFileOutput(
-					fileName, Context.MODE_PRIVATE
+				fileName, Context.MODE_PRIVATE
 			);
 			ObjectOutputStream oos = new ObjectOutputStream(fos);
 			oos.writeObject(t);

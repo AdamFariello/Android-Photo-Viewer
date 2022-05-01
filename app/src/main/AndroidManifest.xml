@@ -14,7 +14,7 @@
         android:theme="@style/Theme.AndroidPhotos86">
 
         <activity
-            android:name=".controllers.album_list_controller"
+            android:name=".testFile"
             android:label="@string/app_name"
             android:exported="true">
             <intent-filter>
