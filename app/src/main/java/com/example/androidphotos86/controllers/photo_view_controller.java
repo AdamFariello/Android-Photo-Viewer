@@ -16,6 +16,7 @@ public class photo_view_controller extends AppCompatActivity {
     private static final int PICK_IMAGE = 100;
     ImageView imageView;
 
+    /* TODO EVERYTHING
     protected void onCreate(Bundle savedInstanceState) {
         //Init
         super.onCreate(savedInstanceState);
@@ -50,4 +51,5 @@ public class photo_view_controller extends AppCompatActivity {
             }
         }
     }
+    */
 }
