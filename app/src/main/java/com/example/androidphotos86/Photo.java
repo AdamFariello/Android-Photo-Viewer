@@ -10,18 +10,6 @@ public class Photo implements Serializable {
 	private ArrayList<Tag> photoTags;
 
 	public Photo(Intent data) {
-		//TODO Figure out what the codes are for
-		//
-		/*
-		super.onActivityResult(requestCode, resultCode, data);
-		if (resultCode == RESULT_OK && requestCode == PICK_IMAGE){
-
-		} else {
-			System.out.println("[DEBUG] Photo.Photo");
-			System.out.println("parameters wrong");
-		}
-		*/
-
 		imageURI = data.getData();
 		photoTags = new ArrayList<Tag>();
 	}
