@@ -16,7 +16,10 @@ import android.widget.ImageView;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 
+import com.google.android.gms.cast.framework.media.ImagePicker;
+
 import java.io.FileNotFoundException;
+import java.time.Instant;
 
 public class photo_view_controller extends AppCompatActivity {
     private static final int PICK_IMAGE = 100;
@@ -28,13 +31,14 @@ public class photo_view_controller extends AppCompatActivity {
         setContentView(R.layout.photo_view);
 
         //Calls
-        imageView = findViewById(R.id.imageView);
+        imageView = findViewById(R.id.imasgeView);
     }
 
     public void bt_exit (View view) {
-        Intent intent = new Intent(Intent.ACTION_PICK,
-                android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-        startActivityForResult(intent, 0);
+        ImagePicker.Companion.with((photo_view_controller.this)
+            .compress(1024)
+            .maxResultSize(1080, 1080)
+            .start();
     }
 
     @Override
