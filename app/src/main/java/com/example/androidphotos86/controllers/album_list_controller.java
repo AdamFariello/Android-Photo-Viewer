@@ -12,8 +12,8 @@ import android.widget.ListView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.androidphotos86.R;
-import com.example.androidphotos86.model.Album;
-import com.example.androidphotos86.model.Serialize;
+import com.example.androidphotos86.photoTools.Album;
+import com.example.androidphotos86.tools.Serialize;
 
 import java.io.EOFException;
 import java.io.File;
@@ -177,5 +177,4 @@ public class album_list_controller extends AppCompatActivity {
         }
         return albums;
     }
-
 }

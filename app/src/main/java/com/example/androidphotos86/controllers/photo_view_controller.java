@@ -1,10 +1,7 @@
 package com.example.androidphotos86.controllers;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.widget.ImageView;
-
-import com.example.androidphotos86.tools.Photo;
 
 public class photo_view_controller extends AppCompatActivity {
     private static final int PICK_IMAGE = 100;

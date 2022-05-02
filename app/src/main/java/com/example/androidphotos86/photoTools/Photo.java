@@ -6,9 +6,13 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 public class Photo {
-	private Uri imageURI;
-	private ArrayList<Tag> photoTags;
+	public Uri imageURI;
+	public ArrayList<Tag> photoTags;
 
+	public Photo(Uri imageURI) {
+		this.imageURI = imageURI;
+		photoTags = new ArrayList<Tag>();
+	}
 	public Photo(Intent data) {
 		imageURI = data.getData();
 		photoTags = new ArrayList<Tag>();
