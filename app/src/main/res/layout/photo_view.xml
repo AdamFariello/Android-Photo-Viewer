@@ -65,7 +65,7 @@
         android:layout_marginTop="3dp"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="4dp"
-        android:onClick="bt_prev"
+        android:onClick="bt_exit"
         android:text="Exit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

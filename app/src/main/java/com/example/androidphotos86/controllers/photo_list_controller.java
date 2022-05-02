@@ -17,6 +17,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+<<<<<<< HEAD
 import com.example.androidphotos86.R;
 import com.example.androidphotos86.model.Album;
 import com.example.androidphotos86.model.ImageAdapter;
@@ -31,6 +32,8 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 
+=======
+>>>>>>> adam
 public class photo_list_controller extends AppCompatActivity {
     public static final String ALBUM_INDEX = "albumIndex";
     public static final String ALBUM_NAME = "albumName";

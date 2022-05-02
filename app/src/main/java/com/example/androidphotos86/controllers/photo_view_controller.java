@@ -1,32 +1,49 @@
 package com.example.androidphotos86.controllers;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.widget.ImageView;
-
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.androidphotos86.R;
-import com.example.androidphotos86.model.Photo;
+import android.widget.ImageView;
+
+import com.example.androidphotos86.tools.Photo;
 
 public class photo_view_controller extends AppCompatActivity {
+    private static final int PICK_IMAGE = 100;
     ImageView imageView;
 
+    /* TODO EVERYTHING
     protected void onCreate(Bundle savedInstanceState) {
         //Init
         super.onCreate(savedInstanceState);
         setContentView(R.layout.photo_view);
-        imageView = findViewById(R.id.imageView);
-    }
-    private void updateImageView(Photo photo) {
-        imageView.setImageURI(photo.getUri());
+
+        //Calls
+        imageView = findViewById(R.id.imasgeView);
     }
 
-    private void bt_exit () {
-        //TODO method will temporary open gallary
-        //Intent gallery = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI);
-       // startActivityForResult(gallery, PICK_IMAGE);
-
-       // Photo photo = new Photo(gallary);
+    public void bt_exit (View view) {
+        ImagePicker.Companion.with((photo_view_controller.this)
+            .compress(1024)
+            .maxResultSize(1080, 1080)
+            .start();
     }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        // TODO Auto-generated method stub
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (resultCode == RESULT_OK){
+            Photo photo = new Photo(data);
+            try {
+                Bitmap bitmap = BitmapFactory.decodeStream(
+                        getContentResolver().openInputStream(photo.getUri())
+                );
+                imageView.setImageBitmap(bitmap);
+            } catch (FileNotFoundException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }
+    }
+    */
 }
