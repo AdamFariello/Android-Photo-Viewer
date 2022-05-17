@@ -1,4 +1,4 @@
-package com.example.androidphotos86.controllers;
+package com.example.androidphotos86.photoHandler;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -40,8 +40,9 @@ public class photo_list_controller extends AppCompatActivity {
     private ImageAdapter imageAdapter;
 
     protected void onCreate(Bundle savedInstanceState){
-    super.onCreate(savedInstanceState);
-    setContentView(R.layout.photo_list);
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.photo_list);
+        
         try{
             albumArrayList= new ArrayList<Album>();
             albumArrayList=load();

@@ -1,9 +1,12 @@
 package com.example.androidphotos86.photoTools;
 
 import android.content.Context;
+import android.net.Uri;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.GridView;
+import android.widget.ImageView;
 
 import java.util.ArrayList;
 
@@ -27,7 +30,6 @@ public class ImageAdapter extends BaseAdapter {
 
     // create a new ImageView for each item referenced by the Adapter
     public View getView(int position, View convertView, ViewGroup parent) {
-        /*
         ImageView imageView;
         if (convertView == null) {  // if it's not recycled, initialize some attributes
             imageView = new ImageView(mContext);
@@ -37,11 +39,12 @@ public class ImageAdapter extends BaseAdapter {
         } else {
             imageView = (ImageView) convertView;
         }
-         Uri uri = photos.get(position).getUri();
+
+        Uri uri = photos.get(position).getUri();
         imageView.setImageURI(uri);
         return imageView;
-         */
-        return null;
+
+        //return null;
     }
 
 

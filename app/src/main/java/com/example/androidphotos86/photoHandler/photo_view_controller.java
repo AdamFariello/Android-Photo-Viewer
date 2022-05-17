@@ -1,4 +1,4 @@
-package com.example.androidphotos86.controllers;
+package com.example.androidphotos86.photoHandler;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.widget.ImageView;

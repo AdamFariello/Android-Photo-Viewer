@@ -1,4 +1,4 @@
-package com.example.androidphotos86.controllers;
+package com.example.androidphotos86.photoSearch;
 
 import android.os.Bundle;
 

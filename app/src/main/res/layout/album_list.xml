@@ -32,7 +32,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/renamealbum_name" />
+        app:layout_constraintTop_toBottomOf="@+id/renameAlbumName" />
 
     <Button
         android:id="@+id/removeButton"
@@ -41,26 +41,26 @@
         android:text="Remove"
         android:onClick="removeAlbum"
         app:layout_constraintBottom_toTopOf="@+id/renameButton"
-        app:layout_constraintEnd_toStartOf="@+id/removealbum_name"
+        app:layout_constraintEnd_toStartOf="@+id/removeAlbumName"
         app:layout_constraintHorizontal_bias="0.279"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button"
         app:layout_constraintVertical_bias="0.046" />
 
     <EditText
-        android:id="@+id/renamealbum_name"
+        android:id="@+id/renameAlbumName"
         android:layout_width="166dp"
         android:layout_height="48dp"
         android:background="@android:drawable/editbox_background"
         android:hint="Old Album Name"
         app:layout_constraintBottom_toTopOf="@+id/renameButton"
-        app:layout_constraintEnd_toStartOf="@+id/newalbum_name"
+        app:layout_constraintEnd_toStartOf="@+id/newAlbumName"
         app:layout_constraintHorizontal_bias="0.294"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/removeButton" />
 
     <EditText
-        android:id="@+id/removealbum_name"
+        android:id="@+id/removeAlbumName"
         android:layout_width="214dp"
         android:layout_height="48dp"
         android:background="@android:drawable/editbox_background"
@@ -68,12 +68,12 @@
         app:layout_constraintBottom_toTopOf="@+id/renameButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/renamealbum_name"
+        app:layout_constraintStart_toEndOf="@+id/renameAlbumName"
         app:layout_constraintTop_toBottomOf="@+id/album_list"
         app:layout_constraintVertical_bias="0.477" />
 
     <EditText
-        android:id="@+id/newalbum_name"
+        android:id="@+id/newAlbumName"
         android:layout_width="166dp"
         android:layout_height="48dp"
         android:layout_marginEnd="4dp"
@@ -81,7 +81,7 @@
         android:hint="New Album Name"
         app:layout_constraintBottom_toTopOf="@+id/renameButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/removealbum_name"
+        app:layout_constraintTop_toBottomOf="@+id/removeAlbumName"
         app:layout_constraintVertical_bias="0.3" />
 
     <ListView
@@ -95,12 +95,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/addalbum_name"
+        android:id="@+id/addAlbumName"
         android:layout_width="214dp"
         android:layout_height="48dp"
         android:background="@android:drawable/editbox_background"
         android:hint="Album Name"
-        app:layout_constraintBottom_toTopOf="@+id/removealbum_name"
+        app:layout_constraintBottom_toTopOf="@+id/removeAlbumName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.733"
         app:layout_constraintStart_toEndOf="@+id/removeButton"
@@ -113,8 +113,8 @@
         android:layout_height="50dp"
         android:text="Add "
         android:onClick="addAlbum"
-        app:layout_constraintBottom_toTopOf="@+id/removealbum_name"
-        app:layout_constraintEnd_toStartOf="@+id/addalbum_name"
+        app:layout_constraintBottom_toTopOf="@+id/removeAlbumName"
+        app:layout_constraintEnd_toStartOf="@+id/addAlbumName"
         app:layout_constraintHorizontal_bias="0.266"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/album_list"
